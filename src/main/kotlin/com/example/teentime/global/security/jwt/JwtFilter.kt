@@ -17,6 +17,7 @@ class JwtTokenFilter(
     ) {
         val bearer: String? = jwtTokenProvider.resolveToken(request)
 
+        SecurityContextHolder.clearContext()
         if (bearer != null) {
             val authentication: Authentication? = jwtTokenProvider.authentication(bearer)
             SecurityContextHolder.getContext().authentication = authentication
