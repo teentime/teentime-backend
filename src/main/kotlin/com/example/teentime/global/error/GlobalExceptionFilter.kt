@@ -3,12 +3,12 @@ package com.example.teentime.global.error
 import com.example.teentime.global.error.exception.BusinessException
 import com.example.teentime.global.error.exception.ErrorResponse
 import com.fasterxml.jackson.databind.ObjectMapper
-import jakarta.servlet.FilterChain
-import jakarta.servlet.http.HttpServletRequest
-import jakarta.servlet.http.HttpServletResponse
 import org.springframework.web.filter.OncePerRequestFilter
 import java.io.IOException
 import java.time.LocalDateTime
+import javax.servlet.FilterChain
+import javax.servlet.http.HttpServletRequest
+import javax.servlet.http.HttpServletResponse
 
 class GlobalExceptionFilter(
     private val objectMapper: ObjectMapper

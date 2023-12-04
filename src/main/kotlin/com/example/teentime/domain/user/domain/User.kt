@@ -1,9 +1,9 @@
 package com.example.teentime.domain.user.domain
 
 import com.example.teentime.global.entity.BaseUUIDEntity
-import jakarta.persistence.Column
-import jakarta.persistence.Entity
 import java.util.UUID
+import javax.persistence.Column
+import javax.persistence.Entity
 
 @Entity(name = "tbl_user")
 class User(
